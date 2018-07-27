@@ -1,0 +1,38 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include <QTextEdit>
+
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+
+void MainWindow::on_button_cal_clicked()
+{
+    QString temp_weight=this->ui->textbox_result->document()->toPlainText();
+
+    weight=temp_weight.toDouble();
+
+    if(status==POSTCARD)
+    {
+        ui->textbox_result->document()->setPlainText("邮费为0.8元\n");
+    }
+}
+
+void MainWindow::on_button_mail_clicked()
+{
+    status=MAIL;
+}
+
+void MainWindow::on_button_postcard_clicked()
+{
+    status=POSTCARD;
+}
