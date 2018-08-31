@@ -1,7 +1,8 @@
-#ifndef MAINWINDOW_H
+﻿#ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "dialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -29,6 +30,14 @@ private slots:
     void on_botton_outside_clicked();
 
     void on_button_cal_2_clicked();
+
+    void on_button_mail_2_clicked();
+
+    void on_button_postcard_2_clicked();
+
+    void on_button_cal_3_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QTextEdit>
 #include <math.h>
+#include "dialog.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -22,7 +23,7 @@ void MainWindow::on_button_cal_clicked()
 {
     QString temp_weight=this->ui->textbox_weight->document()->toPlainText();
 
-    int weight=ceil(temp_weight.toDouble());
+    int weight=(int)ceil(temp_weight.toDouble());
 
 
     if(status==POSTCARD)
@@ -104,5 +105,54 @@ void MainWindow::on_botton_outside_clicked()
 
 void MainWindow::on_button_cal_2_clicked()
 {
+    int weight=(int)ceil(this->ui->textbox_weight_2->document()->toPlainText().toDouble());
 
+    if(status==MAIL)
+    {
+        if(weight<=20)
+        {
+            postfee=3.5;
+        }
+        else
+        {
+            postfee=3.5+((weight-20)/10)*1.5;
+        }
+    }
+    else if(status==POSTCARD)
+    {
+        postfee=3.5;
+    }
+
+    QString text;
+    text.append("邮费为");
+    text.append(QString::number(postfee));
+    text.append("元");
+
+    ui->textbox_result_2->document()->setPlainText(text);
+
+}
+
+
+void MainWindow::on_button_mail_2_clicked()
+{
+    status=MAIL;
+}
+
+
+
+void MainWindow::on_button_postcard_2_clicked()
+{
+    status=POSTCARD;
+}
+
+void MainWindow::on_button_cal_3_clicked()
+{
+    ;
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    Dialog *d = new Dialog(this);
+
+    d->show();
 }
