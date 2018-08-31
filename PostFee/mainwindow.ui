@@ -13,8 +13,8 @@
   <property name="windowTitle">
    <string>PostFee Calculor</string>
   </property>
-  <widget class="QWidget" name="centralWidget">
-   <widget class="QTabWidget" name="tabWidget">
+  <widget class="QWidget" name="widget">
+   <widget class="QTabWidget" name="localChoose_Bar">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_domesitc">
      <attribute name="title">
@@ -172,11 +172,233 @@
      <attribute name="title">
       <string>台港澳资费</string>
      </attribute>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>邮件类型</string>
+      </property>
+      <widget class="QRadioButton" name="button_mail_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>信件</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="button_postcard_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>明信片</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>重量</string>
+      </property>
+      <widget class="QTextEdit" name="textbox_weight_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="button_cal_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>50</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>541</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>结果</string>
+      </property>
+      <widget class="QTextEdit" name="textbox_result_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>511</width>
+         <height>91</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_international">
      <attribute name="title">
       <string>国际资费</string>
      </attribute>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>邮件类型</string>
+      </property>
+      <widget class="QRadioButton" name="button_mail_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>信件</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="button_postcard_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>明信片</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>重量</string>
+      </property>
+      <widget class="QTextEdit" name="textbox_weight_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>120</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>地区分组</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>20</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>运输方式</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_cal_3">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>120</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>150</y>
+        <width>541</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>结果</string>
+      </property>
+      <widget class="QTextEdit" name="textbox_result_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>511</width>
+         <height>91</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
     </widget>
    </widget>
   </widget>

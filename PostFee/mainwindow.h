@@ -28,6 +28,8 @@ private slots:
 
     void on_botton_outside_clicked();
 
+    void on_button_cal_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 

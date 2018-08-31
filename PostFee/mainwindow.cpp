@@ -1,6 +1,7 @@
 ﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QTextEdit>
+#include <math.h>
 
 #pragma execution_character_set("utf-8")
 
@@ -21,7 +22,7 @@ void MainWindow::on_button_cal_clicked()
 {
     QString temp_weight=this->ui->textbox_weight->document()->toPlainText();
 
-    weight=temp_weight.toDouble();
+    int weight=ceil(temp_weight.toDouble());
 
 
     if(status==POSTCARD)
@@ -32,25 +33,52 @@ void MainWindow::on_button_cal_clicked()
     {
         if(area==INSIDE)
         {
-            if(weight<=20)
+            if(weight<=100)
             {
-                postfee=0.8;
-            }
-            else if(weight>20&&weight<=100)
-            {
-                postfee=0.8+((int)(((weight-20)/20)+1))*0.8;
+                postfee=(weight/20)*0.8;
+
+                if(weight%20!=0)
+                {
+                    postfee+=0.8;
+                }
             }
             else
             {
-                postfee=8+((int)(((weight-100)+1)/100))*1.2;
-            }
-            QString text;
-            text.append("邮费为");
-            text.append(QString::number(postfee));
-            text.append("元");
+                postfee=4+((weight-100)/100)*1.2;
 
-            ui->textbox_result->document()->setPlainText(text);
+                if((weight-100)%100!=0)
+                {
+                    postfee+=1.2;
+                }
+            }
         }
+        else if(area==OUTSIDE)
+        {
+            if(weight<=100)
+            {
+                postfee=(weight/20)*1.2;
+
+                if(weight%20!=0)
+                {
+                    postfee+=1.2;
+                }
+            }
+            else
+            {
+                postfee=6+(weight-100/100)*2;
+
+                if((weight-100)%100!=0)
+                {
+                    postfee+=2;
+                }
+            }
+        }
+
+        QString text;
+        text.append("邮费为");
+        text.append(QString::number(postfee));
+        text.append("元");
+        ui->textbox_result->document()->setPlainText(text);
     }
 }
 
@@ -72,4 +100,9 @@ void MainWindow::on_botton_inside_clicked()
 void MainWindow::on_botton_outside_clicked()
 {
     area=OUTSIDE;
+}
+
+void MainWindow::on_button_cal_2_clicked()
+{
+
 }
