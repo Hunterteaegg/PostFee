@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_2</class>
+ <widget class="QDialog" name="Dialog_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>285</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>空运水陆寄达国家分组</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>651</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; align=&quot;center&quot; width=&quot;560&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;4&quot; style=&quot; vertical-align:top;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei'; font-size:13px; color:#666666;&quot;&gt;空运水陆路函件寄达国家和地区分组：&lt;br /&gt;第一组（1个）：格鲁吉亚；&lt;br /&gt;第二组（40个）：阿塞拜疆、韩国、日本、阿尔巴尼亚、爱尔兰、爱沙尼亚、奥地利、白俄罗斯、保加利亚、比利时、冰岛、波兰、丹麦、德国、法国、芬兰、荷兰、捷克、克罗地亚、拉脱维亚、立陶宛、卢森堡、罗马尼亚、马耳他、摩尔多瓦、挪威、葡萄牙、瑞典、塞尔维亚、斯洛伐克、斯洛文尼亚、乌克兰、西班牙、希腊、匈牙利、意大利、英国、加拿大、美国、澳大利亚；&lt;br /&gt;第三组：（29个）俄罗斯、阿松森、科摩罗、圣多美和普林西比、莱索托、安圭拉、巴拉圭、巴西、百慕大、波多黎各、玻利维亚、格陵兰、美属维尔京、圣皮埃尔和密克隆、安道尔、波黑、法罗群岛、梵蒂冈、黑山、列支敦士登、马其顿、摩纳哥、瑞士、圣马力诺、亚速尔和马德拉群岛、直布罗陀、塞浦路斯、亚美尼亚、特里斯达库尼亚。&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;4&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei';&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

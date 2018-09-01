@@ -359,7 +359,7 @@
         </rect>
        </property>
        <property name="text">
-        <string>RadioButton</string>
+        <string>第一组</string>
        </property>
       </widget>
       <widget class="QRadioButton" name="radioButton_5">
@@ -372,7 +372,7 @@
         </rect>
        </property>
        <property name="text">
-        <string>RadioButton</string>
+        <string>第二组</string>
        </property>
       </widget>
       <widget class="QRadioButton" name="radioButton_6">
@@ -385,7 +385,7 @@
         </rect>
        </property>
        <property name="text">
-        <string>RadioButton</string>
+        <string>第三组</string>
        </property>
       </widget>
      </widget>
@@ -411,7 +411,7 @@
         </rect>
        </property>
        <property name="text">
-        <string>RadioButton</string>
+        <string>空运</string>
        </property>
       </widget>
       <widget class="QRadioButton" name="radioButton_2">
@@ -424,7 +424,7 @@
         </rect>
        </property>
        <property name="text">
-        <string>RadioButton</string>
+        <string>空运水陆</string>
        </property>
       </widget>
       <widget class="QRadioButton" name="radioButton_3">
@@ -437,7 +437,7 @@
         </rect>
        </property>
        <property name="text">
-        <string>RadioButton</string>
+        <string>水陆</string>
        </property>
       </widget>
      </widget>
@@ -480,14 +480,27 @@
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>420</x>
+        <x>310</x>
         <y>120</y>
-        <width>75</width>
+        <width>81</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>查看分组</string>
+       <string>查看航空分组</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>120</y>
+        <width>81</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看水陆分组</string>
       </property>
      </widget>
     </widget>

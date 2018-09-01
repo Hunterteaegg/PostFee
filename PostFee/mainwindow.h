@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include "dialog.h"
+#include "dialog_2.h"
+
+enum Group{FIRST,SECOND,THIRD};
 
 namespace Ui {
 class MainWindow;
@@ -39,6 +42,24 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_button_mail_3_clicked();
+
+    void on_button_postcard_3_clicked();
+
+    void on_radioButton_4_clicked();
+
+    void on_radioButton_5_clicked();
+
+    void on_radioButton_6_clicked();
+
+    void on_radioButton_clicked();
+
+    void on_radioButton_2_clicked();
+
+    void on_radioButton_3_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 
@@ -46,6 +67,9 @@ private:
     Status status;
     enum Area{INSIDE,OUTSIDE};
     Area area;
+    enum Transform_type{AIR,AIR_SHIP,SHIP};
+    Transform_type transform_type;
+    Group group;
 
     double weight;
     double postfee;
